@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="bankscss.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap"
+      rel="stylesheet"
+    />
+    <title>bank list</title>
+  </head>
+  <body>
+    <center>
+      <div class="top">
+        <div class="top_">
+          <div class="top_child1">Good morning surya</div>
+          <div class="top_child2"></div>
+        </div>
+        <div class="top_child3">
+          <div class="inp">
+            <label for="username">User name</label>
+            <input id="username" name="username" />
+          </div>
+          <div class="inp">
+            <label for="password">Password</label>
+            <input id="password" name="password" type="password" />
+          </div>
+          <button class="okbtn" id="login">OK</button>
+        </div>
+      </div>
+    </center>
+    <center>
+      <div class="mainb" id="trans">
+        <div class="mainb_top">
+          <div class="mainb_top1">
+            <div>Current balance</div>
+            <div class="mainb_top12">as of now</div>
+          </div>
+          <div class="mainb_top1" id="curbal">251463$</div>
+        </div>
+        <div class="mainb_bottom">
+          <div class="mainb_bottom_left">
+            <div class="mainb_bottom_left1"></div>
+            <div class="mainb_bottom_left2">
+              <div class="ftsize2">IN</div>
+              <div id="inbal" style="color: green;">2541$
+            </div>
+            <div class="ftsize2">OUT</div>
+            <div id="outbal" style="color: red">252$</div>
+            
+          </div>
+          <button id="sortbtn" class="ftsize2">Sort</button>
+        </div>
+        <div class="mainb_bottom_right">
+          <div class="mainb_bottom_right1">
+            <div class="mainb_bottom_right1_1 ftsize2">Transfer Money</div>
+            <div class="mainb_bottom_right1_2 ftsize2">
+              <div class="inp">
+                <input id="Transferto" name="Transfer to" />
+                <label for="Transferto">Transfer to</label>
+              </div>
+              <div class="inp">
+                <input id="Amount" name="Amount" />
+                <label for="Amount">Amount</label>
+              </div>
+              <button class="okbtn" id="transto">Send</button>
+            </div>
+          </div>
+          <div class="mainb_bottom_right2">
+            <div class="mainb_bottom_right26">
+              <div class="inp ftsize2">
+                <input id="request" name="request" />
+                <label for="request">Request loan</label>
+              </div>
+              <button class="okbtn">Req</button>
+            </div>
+          </div>
+          <div class="mainb_bottom_right3">
+            <div class="mainb_bottom_right1_1 ftsize2">Delete Account</div>
+            <div class="mainb_bottom_right1_2 ftsize2">
+              <div class="inp">
+                <input id="deleteacc" name="deleteacc" />
+                <label for="deleteacc">Account No</label>
+              </div>
+              <div class="inp">
+                <input id="pin" name="pin" />
+                <label for="pin">pin</label>
+              </div>
+              <button class="okbtn" id="delbtn">Del</button>
+            </div>
+          </div>
+          <div class="mainb_bottom_right4 ftsize2">
+            session will expire in : x x x x
+          </div>
+        </div>
+      </div>
+    </center>
+    <script src="bankjs.js"></script>
+  </body>
+</html>
